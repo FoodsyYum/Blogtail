@@ -85,8 +85,8 @@ app.use('/', home);
  * start server
  */
 
-const PORT = process.env.PORT || 3000;
-const server = app.listen(PORT, async () => {
+// const PORT = process.env.PORT || 3000;
+const server = app.listen('/', async () => {
     console.log(`Server started on http://localhost:${PORT}`);
 
     await connectDB(process.env.MONGO_CONNECTION_URI);
