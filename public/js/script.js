@@ -1,4 +1,4 @@
-'use script';
+'use strict';
 
 const $topAppBar = document.querySelector('[data-top-app-bar]');
 let lastScrollPos = 0;
@@ -32,3 +32,33 @@ $menuWrappers?.forEach(function ($menuWrapper) {
         $menu.classList.toggle('active');
     });
 });
+
+/**
+ * Backward btn functionality in blog create page
+ */
+
+const $backBtn = document.querySelector('[data-back-btn]');
+
+const handleBackward = function () {
+    window.history.back();
+
+}
+
+$backBtn?.addEventListener('click', handleBackward);
+
+/**
+ * Auto height textarea in blog create form
+ */
+
+const $autoHeightTextarea = document.querySelector('[data-textarea-auto-height]');
+
+const textareaAutoHeight = function () {
+    this.style.height = this.scrollHeight + 'px';
+    this.style.maxHeight = this.scrollHeight + 'px';
+}
+
+$autoHeightTextarea?.addEventListener('input', textareaAutoHeight);
+
+// Set initial textarea height
+
+$autoHeightTextarea && textareaAutoHeight.call($autoHeightTextarea);
