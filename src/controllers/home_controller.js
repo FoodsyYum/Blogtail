@@ -25,6 +25,11 @@ const renderHome = async (req, res) => {
         // Get pagination object
         const pagination = getPagination('/', req.params, 20, totalBlogs);
 
+<<<<<<< HEAD
+=======
+        console.log(pagination);
+
+>>>>>>> f5ba7e1d463e4fc8df89636d2f84095739d80c6c
         // Retrieve blogs from the database, selecting specified fields and populating 'owner' field.
         const latestBlogs = await Blog.find()
             .select('banner author createdAt readingTime title reaction totalBookmark')

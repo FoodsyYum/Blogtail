@@ -1764,6 +1764,7 @@ body:has( .dialog-root.active) { overflow: hidden; }
   }
 
 }
+<<<<<<< HEAD
 
 /**
   * responsive for larger than 1200px screen
@@ -1807,3 +1808,5 @@ body:has( .dialog-root.active) { overflow: hidden; }
   }
 
 }
+=======
+>>>>>>> f5ba7e1d463e4fc8df89636d2f84095739d80c6c

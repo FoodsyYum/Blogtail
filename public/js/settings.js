@@ -5,7 +5,11 @@
  */
 import Snackbar from './snackbar.js';
 import imagePreview from './utils/imagePreview.js';
+<<<<<<< HEAD
 import imageAsDataURL from './utils/imageAsDataUrl.js';
+=======
+import imageAsDataURL from './utils/imageAsDataURL.js';
+>>>>>>> f5ba7e1d463e4fc8df89636d2f84095739d80c6c
 import config from './config.js';
 
 // Selectors for image field, image preview, and clear preview button
@@ -123,6 +127,7 @@ const updateBasicInfo = async (event) => {
 
 }
 
+<<<<<<< HEAD
 $basicInfoForm.addEventListener('submit', updateBasicInfo);
 
 /**
@@ -232,3 +237,6 @@ const $deleteAccount = async () => {
 }
 
 $accountDeleteBtn.addEventListener('click', $deleteAccount);
+=======
+$basicInfoForm.addEventListener('submit', updateBasicInfo);
+>>>>>>> f5ba7e1d463e4fc8df89636d2f84095739d80c6c

@@ -40,7 +40,11 @@ const addReaction = async () => {
         if (response.status === 401) {
             const $dialog = dialog({
                 title: 'Login to continue',
+<<<<<<< HEAD
                 content: `We're a place where coders share, stay up-to-date and grow their careers. So, make a account to unlock all the feature like creating blogs, reacting or adding them to reading list and more...`
+=======
+                content: `We're a place where coders share, stay up-tp-date and grow their careers. So, make a account to unlock all the feature like creating blogs, reacting or adding them to reading list and more...`
+>>>>>>> f5ba7e1d463e4fc8df89636d2f84095739d80c6c
             });
 
             document.body.appendChild($dialog);

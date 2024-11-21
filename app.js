@@ -144,6 +144,7 @@ app.use('/dashboard', dashboard);
 app.use('/settings', settings);
 
 /**
+<<<<<<< HEAD
  * 404 page
  */
 
@@ -152,11 +153,17 @@ app.get('*', (req, res) => {
 });
 
 /**
+=======
+>>>>>>> f5ba7e1d463e4fc8df89636d2f84095739d80c6c
  * start server
  */
 
 const PORT = process.env.PORT || 3000;
+<<<<<<< HEAD
 const server = app.listen(PORT, async () => {
+=======
+const server = app.listen(3000, '0.0.0.0', async () => {
+>>>>>>> f5ba7e1d463e4fc8df89636d2f84095739d80c6c
     console.log(`Server started on http://localhost:${PORT}`);
 
     await connectDB(process.env.MONGO_CONNECTION_URI);

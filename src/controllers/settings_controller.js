@@ -1,6 +1,7 @@
 'use strict';
 
 /**
+<<<<<<< HEAD
  * node modules
  */
 const bcrypt = require('bcrypt');
@@ -11,6 +12,11 @@ const mongoose = require('mongoose');
  */
 const User = require('../models/user_model');
 const Blog = require('../models/blog_model');
+=======
+ * custom modules
+ */
+const User = require('../models/user_model');
+>>>>>>> f5ba7e1d463e4fc8df89636d2f84095739d80c6c
 const uploadToCloudinary = require('../config/cloudinary_config');
 
 /**
@@ -129,6 +135,7 @@ const updateBasicInfo = async (req, res) => {
     }
 }
 
+<<<<<<< HEAD
 /**
  * Updates the password of the logged-in user.
  * 
@@ -229,4 +236,9 @@ module.exports = {
     updateBasicInfo,
     updatePassword,
     deleteAccount
+=======
+module.exports = {
+    renderSettings,
+    updateBasicInfo
+>>>>>>> f5ba7e1d463e4fc8df89636d2f84095739d80c6c
 };

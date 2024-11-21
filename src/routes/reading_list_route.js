@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 'use strict';
+=======
+'use strcit';
+>>>>>>> f5ba7e1d463e4fc8df89636d2f84095739d80c6c
 
 /**
  * node modules
